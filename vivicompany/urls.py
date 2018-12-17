@@ -16,11 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,re_path
 from django.urls import include
-import info.views as views
+
 urlpatterns = [
-    re_path('^$',views.index),
+    re_path('^',include(('goods.urls','goods'),namespace='goods')),
     path('admin/', admin.site.urls),
-    path('info/',include('info.urls')),
-    path('goods/',include('goods.urls'))
 
 ]
