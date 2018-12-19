@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ViViCompany</title>
+</head>
+<body>
+ welcome to vivi's company!
+
+ <p><a href="{% url 'goods:index' %}">home</a></p>
+ <p><a href="{% url 'goods:contact_us' %}">contact us</a></p>
+ <p><a href="{% url 'goods:about_us' %}">about us </a></p>
+ <p><a>sales</a></p>
+
+{# 改成类别自动读取生成 方便后期季节性的东西维护#}
+ <p><a href="">vocation</a></p>
+
+ <ul>
+     {% for k,v in catalog %}
+     <li>{{ v }}</li>
+     {% endfor %}
+ </ul>
+
+ <a href="{% url  'goods:index' %}">contact us</a>
+</body>
+</html>

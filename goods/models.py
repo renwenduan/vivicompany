@@ -12,6 +12,3 @@ class Goods(models.Model):
 
     def __str__(self):
         return self.gname
-
-class Catalog(models.Model):
-    pass
