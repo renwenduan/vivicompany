@@ -6,4 +6,5 @@ urlpatterns = [
     re_path('^index$',views.index,name='index'),
     re_path('^contact_us$',views.contact_us,name='contact_us'),
     re_path('^about_us$',views.about_us,name='about_us'),
+    url(r'^goods/(.*)/',views.goods_show,name='goods_show')
 ]

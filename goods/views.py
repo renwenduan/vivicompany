@@ -2,13 +2,17 @@ from django.shortcuts import render
 from .models import Goods
 # Create your views here.
 
+
 def index(request):
-    goods = Goods()
-    catalog1 = Goods.objects.values('gmain_catalog').distinct()
+    catalog_list = []
+    all_catalog= Goods.objects.values('gmain_catalog').distinct()
+    for item in all_catalog:
+        catalog_list.append(item['gmain_catalog'])
     context = {
-    'catalog':catalog1
+    'catalog':set(catalog_list)
     }
-    return render(request,'index.html',context)
+    return render(request, 'base.html', context)
+
 
 def contact_us(request,):
     context = {
@@ -17,8 +21,17 @@ def contact_us(request,):
     }
     return render(request,'contact_us.html',context)
 
+
 def about_us(request,):
     context = {
 
     }
     return render(request,'about_us.html',context)
+
+def goods_show(request,catalog):
+    print(catalog)
+    result = Goods.objects.filter(gmain_catalog=catalog).values()
+    context={
+        'result': result
+    }
+    return render(request,'goods_show.html',context)

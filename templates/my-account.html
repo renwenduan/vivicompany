@@ -1,5 +1,4 @@
-{% load staticfiles %}
-
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 
@@ -12,8 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="{% static  'goods/img/favicon.ico' %}" type="image/x-icon">
-	<link rel="apple-touch-icon" href="{% static 'goods/img/icon.png' %}">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/icon.png">
 
 	<!-- Google font (font-family: 'Carrois Gothic', sans-serif;) -->
 	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
@@ -21,14 +20,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	
 	<!-- Plugins -->
-	<link rel="stylesheet" href="{% static 'goods/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'goods/css/plugins.css' %}">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/plugins.css">
 
 	<!-- Style Css -->
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href="{% static 'goods/css/custom.css' %}">
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -105,7 +104,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-7 col-12">
 							<div class="header-logo">
 								<a href="base.html">
-									<img src="{% static 'goods/img/logo/logo-1.png' %}" alt="logo">
+									<img src="img/logo/logo-1.png" alt="logo">
 								</a>
 							</div>
 						</div>
@@ -117,7 +116,7 @@
 									<ul class="minicart-product-list">
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-1.jpg' %}" alt="cart products">
+												<img src="img/product/small-size/product-image-1.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -130,7 +129,7 @@
 										</li>
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-2.jpg' %}" alt="cart products">
+												<img src="img/product/small-size/product-image-2.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -143,7 +142,7 @@
 										</li>
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-3.jpg'%}" alt="cart products">
+												<img src="img/product/small-size/product-image-3.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -281,260 +280,146 @@
 			<!--// Header Mobile Menu -->
 
 		</header>
-		<!--// Header -->
-
-		<!-- Hero Area -->
-		<div class="hero-area slider-navigation-1">
-			<div class="single-hero-item d-flex align-items-center"style="background-image: url(/static/goods/img/hero-image/hero-image-1.jpg);">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-8 col-md-9 offset-xl-1 offset-0">
-							<div class="hero-content">
-								<h1>LATEST & EXCLUSIVE COLLECTIONS FOR WOMEN</h1>
-								<p>Genrre is one of the best shop for mens product & womens product. We always try to bring latest & exclusive collections.</p>
-								<a href="shop-right-sidebar.html" class="sn-button">
-									<span>Shop Now</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="single-hero-item d-flex align-items-center"style="background-image: url({% static 'goods/img/hero-image/hero-image-2.jpg'%});">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-8 col-md-9 offset-xl-1 offset-0">
-							<div class="hero-content">
-								<h1>OUR NEW COLLECTIONS FOR STYLISH MEN & WOMEN</h1>
-								<p>Genrre is one of the best shop for mens product & womens product. We always try to bring latest & exclusive collections.</p>
-								<a href="shop-right-sidebar.html" class="sn-button">
-									<span>Shop Now</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--// Hero Area -->
+        <!--// Header -->
+        
+        <!-- Bradcrumb Area -->
+        <div class="sn-breadcrumb-are bg-theme section-padding-xs">
+            <div class="container">
+                <div class="sn-breadcrumb text-center">
+                    <h3>MY ACCOUNT</h3>
+                </div>
+            </div>
+        </div>
+        <!--// Bradcrumb Area -->
 
 		<!-- Page Conttent -->
 		<main class="page-content">
 
-			<!-- Banners Area -->
-			<div class="banner-area section-padding-md">
-				<div class="container">
-					<div class="row banners-masonry-active banners-wrapper">
+            <!-- Account Page Area -->
+            <div class="account-page-area section-padding-md">
+                <div class="container">
+                    <div class="row">
 
-						<!-- Single Banner -->
-						<div class="col-lg-8 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-1.jpg'%}" alt="best banner image">
-								<div class="banner-content text-center">					
-									<h3>SAHARA MEN’S JEWELRY</h3>
-									<p>Get more jewelry accessories from Sahara spring jewelry Collection 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
+                        <div class="col-lg-3">
+                            <ul class="nav myaccount-tab-trigger" id="account-page-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="account-dashboard-tab" data-toggle="tab" href="#account-dashboard" role="tab" aria-controls="account-dashboard" aria-selected="true">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-orders-tab" data-toggle="tab" href="#account-orders" role="tab" aria-controls="account-orders" aria-selected="false">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-address-tab" data-toggle="tab" href="#account-address" role="tab" aria-controls="account-address" aria-selected="false">Addresses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-details-tab" data-toggle="tab" href="#account-details" role="tab" aria-controls="account-details" aria-selected="false">Account Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-logout-tab"  href="login-register.html" role="tab"  aria-selected="false">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
 
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-2.jpg'%}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>VINTAGE CLOTHING</h3>
-									<p>Sale away with 58 new styles up 80 % off</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-3.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>BEAUTIFUL & FRESH</h3>
-									<p>Make your life more colorful !</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-4.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>FASHION MENSWEAR</h3>
-									<p>Spring Collections 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-5.jpg'%}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>COLORFUL SWEATER</h3>
-									<p>Get the new look with only <br>$250.00</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-6.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>CASUAL SHOES</h3>
-									<p>Sahara casual shoes collection 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-7.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>GRUNGE STREET STYLE</h3>
-									<p>Become a grunge guy now !</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-9.jpg' %}" alt="best banner image">
-								<div class="banner-content text-center">					
-									<h3>NEW EXCLUSIVES</h3>
-									<p>Our best beautiful multitakers – 30% OFF</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-						
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-8.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>SAHARA LOOKBOOK</h3>
-									<p>Spring / Summer 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-					</div>
-				</div>
-			</div>
-			<!--// Banners Area -->
-
-			<!-- Features Area -->
-			<div class="features-area">
-				<div class="container">
-					<div class="row justify-content-center features-wrapper">
-
-						<!-- Single Features -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="features text-center">
-								<h6>MONEY BACK GUARANTEED</h6>
-								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-							</div>	
-						</div>
-						<!--// Single Features -->
-
-						<!-- Single Features -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="features text-center">
-								<h6>FREE WORLDWIDE DELIVERY</h6>
-								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-							</div>	
-						</div>
-						<!--// Single Features -->
-
-						<!-- Single Features -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="features text-center">
-								<h6>ONLINE SUPPORT 24/7</h6>
-								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-							</div>	
-						</div>
-						<!--// Single Features -->
-
-					</div>
-				</div>
-			</div>
-			<!--// Features Area -->
-
-			<!-- Newsletter & Brand Logos Area -->
-			<div class="newsletter-brandlogo-area section-padding-xs">
-				<div class="container">
-					<div class="row no-gutters align-items-center">
-
-						<!-- Newsletter -->
-						<div class="col-lg-4">
-							<div class="newsletterbox">
-								<h5>SIGN UP FOR OUR WEEKLY NEWSLETTER !</h5>
-								<form action="#">
-									<input type="text" placeholder="Email">
-									<button type="submit">Subscribe</button>
-								</form>
-							</div>
-						</div>
-						<!--// Newsletter -->
-
-						<!-- Brand Logo -->
-						<div class="col-lg-8">
-							<div class="brand-logos slider-navigation-2">
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-1.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-2.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-3.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-4.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-2.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-3.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-							</div>
-						</div>
-						<!--// Brand Logo -->
-
-					</div>
-				</div>
-			</div>
-			<!--// Newsletter & Brand Logos Area -->
+                        <div class="col-lg-9">
+                            <div class="tab-content myaccount-tab-content" id="account-page-tab-content">
+                                <div class="tab-pane fade show active" id="account-dashboard" role="tabpanel" aria-labelledby="account-dashboard-tab">
+                                    <div class="myaccount-dashboard">
+                                        <p>Hello <b>function.raaz</b> (not function.raaz? <a href="login-register.html">Sign out</a>)</p>
+                                        <p>From your account dashboard you can view your recent orders, manage your shipping and billing addresses and <a href="#">edit your password and account details</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="account-orders" role="tabpanel" aria-labelledby="account-orders-tab">
+                                    <div class="myaccount-orders">
+                                        <h4 class="small-title">MY ORDERS</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <tbody>
+                                                    <tr>			
+                                                        <th>ORDER</th>
+                                                        <th>DATE</th>
+                                                        <th>STATUS</th>
+                                                        <th>TOTAL</th>
+                                                        <th></th>
+                                                    </tr>
+                                                    <tr>		
+                                                        <td><a class="account-order-id" href="#">#5364</a></td>
+                                                        <td>July 27, 2018</td>
+                                                        <td>On Hold</td>
+                                                        <td>£162.00 for 2 items</td>
+                                                        <td><a href="#" class="add-to-cart-button"><span>View</span></a></td>
+                                                    </tr>
+                                                    <tr>		
+                                                        <td><a class="account-order-id" href="#">#5356</a></td>
+                                                        <td>July 27, 2018</td>
+                                                        <td>On Hold</td>
+                                                        <td>£162.00 for 2 items</td>
+                                                        <td><a href="#" class="add-to-cart-button"><span>View</span></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="account-address" role="tabpanel" aria-labelledby="account-address-tab">
+                                    <div class="myaccount-address">
+                                        <p>The following addresses will be used on the checkout page by default.</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4 class="small-title">BILLING ADDRESS</h4>
+                                                <address>
+                                                    1234 Heaven Stress, Beverly Hill OldYork UnitedState of Lorem
+                                                </address>
+                                            </div>
+                                            <div class="col">
+                                                <h4 class="small-title">SHIPPING ADDRESS</h4>
+                                                <address>
+                                                    1234 Heaven Stress, Beverly Hill OldYork UnitedState of Lorem
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="account-details" role="tabpanel" aria-labelledby="account-details-tab">
+                                    <div class="myaccount-details">
+                                        <form action="#" class="sn-form">
+                                            <div class="sn-form-inner">
+												<div class="single-input single-input-half">
+													<label for="account-details-firstname">First Name*</label>
+													<input type="text" id="account-details-firstname">
+												</div>
+												<div class="single-input single-input-half">
+													<label for="account-details-lastname">Last Name*</label>
+													<input type="text" id="account-details-lastname">
+												</div>
+												<div class="single-input">
+													<label for="account-details-email">Email*</label>
+													<input type="email" id="account-details-email">
+												</div>
+												<div class="single-input">
+													<label for="account-details-oldpass">Current Password(leave blank to leave unchanged)</label>
+													<input type="password" id="account-details-oldpass">
+												</div>
+												<div class="single-input">
+													<label for="account-details-newpass">New Password (leave blank to leave unchanged)</label>
+													<input type="password" id="account-details-newpass">
+												</div>
+												<div class="single-input">
+													<label for="account-details-confpass">Confirm New Password</label>
+													<input type="password" id="account-details-confpass">
+												</div>
+												<div class="single-input">
+													<button class="sn-button sn-button-dark" type="submit"><span>SAVE CHANGES</span></button>
+												</div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Account Page Area -->
 
 		</main>
 		<!--// Page Conttent -->
@@ -648,19 +533,20 @@
 			<!--// Footer Copyright Area -->
 			
 		</footer>
-		<!--// Footer Area -->
+        <!--// Footer Area -->
 
 
 	</div>
-	<!--// Wrapper -->
+    <!--// Wrapper -->
+    
 
 	<!-- Js Files -->
-	<script src="{% static 'goods/js/vendor/modernizr-3.6.0.min.js' %}"></script>
-	<script src="{% static 'goods/js/vendor/jquery-3.3.1.min.js' %}"></script>
-	<script src="{% static 'goods/js/popper.min.js' %}"></script>
-	<script src="{% static 'goods/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'goods/js/plugins.js' %}"></script>
-	<script src="/static/goods/js/main.js"></script>
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 

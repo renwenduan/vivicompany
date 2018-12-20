@@ -1,5 +1,4 @@
-{% load staticfiles %}
-
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 
@@ -12,8 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="{% static  'goods/img/favicon.ico' %}" type="image/x-icon">
-	<link rel="apple-touch-icon" href="{% static 'goods/img/icon.png' %}">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/icon.png">
 
 	<!-- Google font (font-family: 'Carrois Gothic', sans-serif;) -->
 	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
@@ -21,14 +20,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	
 	<!-- Plugins -->
-	<link rel="stylesheet" href="{% static 'goods/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'goods/css/plugins.css' %}">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/plugins.css">
 
 	<!-- Style Css -->
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href="{% static 'goods/css/custom.css' %}">
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -105,7 +104,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-7 col-12">
 							<div class="header-logo">
 								<a href="base.html">
-									<img src="{% static 'goods/img/logo/logo-1.png' %}" alt="logo">
+									<img src="img/logo/logo-1.png" alt="logo">
 								</a>
 							</div>
 						</div>
@@ -117,7 +116,7 @@
 									<ul class="minicart-product-list">
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-1.jpg' %}" alt="cart products">
+												<img src="img/product/small-size/product-image-1.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -130,7 +129,7 @@
 										</li>
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-2.jpg' %}" alt="cart products">
+												<img src="img/product/small-size/product-image-2.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -143,7 +142,7 @@
 										</li>
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-3.jpg'%}" alt="cart products">
+												<img src="img/product/small-size/product-image-3.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -281,260 +280,136 @@
 			<!--// Header Mobile Menu -->
 
 		</header>
-		<!--// Header -->
-
-		<!-- Hero Area -->
-		<div class="hero-area slider-navigation-1">
-			<div class="single-hero-item d-flex align-items-center"style="background-image: url(/static/goods/img/hero-image/hero-image-1.jpg);">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-8 col-md-9 offset-xl-1 offset-0">
-							<div class="hero-content">
-								<h1>LATEST & EXCLUSIVE COLLECTIONS FOR WOMEN</h1>
-								<p>Genrre is one of the best shop for mens product & womens product. We always try to bring latest & exclusive collections.</p>
-								<a href="shop-right-sidebar.html" class="sn-button">
-									<span>Shop Now</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="single-hero-item d-flex align-items-center"style="background-image: url({% static 'goods/img/hero-image/hero-image-2.jpg'%});">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-8 col-md-9 offset-xl-1 offset-0">
-							<div class="hero-content">
-								<h1>OUR NEW COLLECTIONS FOR STYLISH MEN & WOMEN</h1>
-								<p>Genrre is one of the best shop for mens product & womens product. We always try to bring latest & exclusive collections.</p>
-								<a href="shop-right-sidebar.html" class="sn-button">
-									<span>Shop Now</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--// Hero Area -->
+        <!--// Header -->
+        
+        <!-- Bradcrumb Area -->
+        <div class="sn-breadcrumb-are bg-theme section-padding-xs">
+            <div class="container">
+                <div class="sn-breadcrumb text-center">
+                    <h3>BLOG DETAILS</h3>
+                </div>
+            </div>
+        </div>
+        <!--// Bradcrumb Area -->
 
 		<!-- Page Conttent -->
 		<main class="page-content">
 
-			<!-- Banners Area -->
-			<div class="banner-area section-padding-md">
+            <!-- Blog Area -->
+            <div class="blog-details-area bg-white section-padding-md">
 				<div class="container">
-					<div class="row banners-masonry-active banners-wrapper">
 
-						<!-- Single Banner -->
-						<div class="col-lg-8 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-1.jpg'%}" alt="best banner image">
-								<div class="banner-content text-center">					
-									<h3>SAHARA MEN’S JEWELRY</h3>
-									<p>Get more jewelry accessories from Sahara spring jewelry Collection 2018</p>
-								</div>
-							</a>	
+					<article class="blog-item blog-item-details">
+						<div class="blog-item-thumb">
+							<a href="blog-details.html">
+								<img src="img/blog/blog-lg-image-2.jpg" alt="blog image">
+							</a>
 						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-2.jpg'%}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>VINTAGE CLOTHING</h3>
-									<p>Sale away with 58 new styles up 80 % off</p>
-								</div>
-							</a>	
+						<div class="blog-item-content">
+							<h4 class="blog-item-title">PROIN FAUCIBUS MASSA VEL TRISTIQUE</h4>
+							<div class="blog-item-meta">POSTED BY <a href="blog.html">ADMIN</a> 05:12 AM MARCH 10, 2018 <a href="#">3 COMMENTS</a></div>
+							<p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra, bibendum massa nec, fermentum odio. Nunc id leo ultrices, mollis ligula in, finibus tortor. Mauris eu dui ut lectus fermentum eleifend. Pellentesque faucibus sem ante, non malesuada odio varius nec. Suspendisse potenti. Proin consectetur aliquam odio nec fringilla. Sed interdum at justo in efficitur. Vivamus gravida volutpat sodales. Fusce ornare sit amet ligula condimentum sagittis.</p>
+							<blockquote>
+								Quisque semper nunc vitae erat pellentesque, ac placerat arcu consectetur. In venenatis elit ac ultrices convallis. Duis est nisi, tincidunt ac urna sed, cursus blandit lectus. In ullamcorper sit amet ligula ut eleifend. Proin dictum tempor ligula, ac feugiat metus. Sed finibus tortor eu scelerisque scelerisque.
+							</blockquote>
+							<p>Aenean et tempor eros, vitae sollicitudin velit. Etiam varius enim nec quam tempor, sed efficitur ex ultrices. Phasellus pretium est vel dui vestibulum condimentum. Aenean nec suscipit nibh. Phasellus nec lacus id arcu facilisis elementum. Curabitur lobortis, elit ut elementum congue, erat ex bibendum odio, nec iaculis lacus sem non lorem. Duis suscipit metus ante, sed convallis quam posuere quis. Ut tincidunt eleifend odio, ac fringilla mi vehicula nec. Nunc vitae lacus eget lectus imperdiet tempus sed in dui. Nam molestie magna at risus consectetur, placerat suscipit justo dignissim. Sed vitae fringilla enim, nec ullamcorper arcu.</p>
+							<p>Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem non mollis. Praesent pretium tellus in tortor viverra condimentum. Nullam dignissim facilisis nisl, accumsan placerat justo ultricies vel. Vivamus finibus mi a neque pretium, ut convallis dui lacinia. Morbi a rutrum velit. Curabitur sagittis quam quis consectetur mattis. Aenean sit amet quam vel turpis interdum sagittis et eget neque. Nunc ante quam, luctus et neque a, interdum iaculis metus. Aliquam vel ante mattis, placerat orci id, vehicula quam. Suspendisse quis eros cursus, viverra urna sed, commodo mauris. Cras diam arcu, fringilla a sem condimentum, viverra facilisis nunc. Curabitur vitae orci id nulla maximus maximus. Nunc pulvinar sollicitudin molestie.</p>
 						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-3.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>BEAUTIFUL & FRESH</h3>
-									<p>Make your life more colorful !</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-4.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>FASHION MENSWEAR</h3>
-									<p>Spring Collections 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-5.jpg'%}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>COLORFUL SWEATER</h3>
-									<p>Get the new look with only <br>$250.00</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-6.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>CASUAL SHOES</h3>
-									<p>Sahara casual shoes collection 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-7.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>GRUNGE STREET STYLE</h3>
-									<p>Become a grunge guy now !</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-9.jpg' %}" alt="best banner image">
-								<div class="banner-content text-center">					
-									<h3>NEW EXCLUSIVES</h3>
-									<p>Our best beautiful multitakers – 30% OFF</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-						
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-8.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>SAHARA LOOKBOOK</h3>
-									<p>Spring / Summer 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-					</div>
-				</div>
-			</div>
-			<!--// Banners Area -->
-
-			<!-- Features Area -->
-			<div class="features-area">
-				<div class="container">
-					<div class="row justify-content-center features-wrapper">
-
-						<!-- Single Features -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="features text-center">
-								<h6>MONEY BACK GUARANTEED</h6>
-								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-							</div>	
-						</div>
-						<!--// Single Features -->
-
-						<!-- Single Features -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="features text-center">
-								<h6>FREE WORLDWIDE DELIVERY</h6>
-								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-							</div>	
-						</div>
-						<!--// Single Features -->
-
-						<!-- Single Features -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="features text-center">
-								<h6>ONLINE SUPPORT 24/7</h6>
-								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
-							</div>	
-						</div>
-						<!--// Single Features -->
-
-					</div>
-				</div>
-			</div>
-			<!--// Features Area -->
-
-			<!-- Newsletter & Brand Logos Area -->
-			<div class="newsletter-brandlogo-area section-padding-xs">
-				<div class="container">
-					<div class="row no-gutters align-items-center">
-
-						<!-- Newsletter -->
-						<div class="col-lg-4">
-							<div class="newsletterbox">
-								<h5>SIGN UP FOR OUR WEEKLY NEWSLETTER !</h5>
-								<form action="#">
-									<input type="text" placeholder="Email">
-									<button type="submit">Subscribe</button>
-								</form>
+						<div class="blog-item-share">
+							<h6>Share This Post: </h6>
+							<div class="social-icons">
+								<ul>
+									<li class="facebook"><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+									<li class="pinterest"><a href="#" data-toggle="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+									<li class="google-plus"><a href="#" data-toggle="tooltip" title="Google-plus"><i class="fa fa-google-plus"></i></a></li>
+									<li class="linkedin"><a href="#" data-toggle="tooltip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
 							</div>
 						</div>
-						<!--// Newsletter -->
-
-						<!-- Brand Logo -->
-						<div class="col-lg-8">
-							<div class="brand-logos slider-navigation-2">
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-1.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-2.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-3.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-4.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-2.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
-								<div class="brand-logo">
-									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-3.jpg'%}" alt="best brand logo">
-									</a>
-								</div>
+						<div class="authorbox">
+							<div class="authorbox-image">
+								<img src="img/author-image/author-image-1.png" alt="author image">
+							</div>
+							<div class="authorbox-content">
+								<h5>About the Author: <a href="blog-right-sidebar.html">Admin</a></h5>
+								<p>Praesent pretium tellus in tortor viverra condimentum condimentum. Nullam dignissim facilisis nisl, accumsan placerat justo ultricies vel</p>
 							</div>
 						</div>
-						<!--// Brand Logo -->
+					</article>
 
+					<div class="blog-details-comments-area">
+						<div class="commentlist">
+							<h6>3 COMMENTS</h6>
+
+							<div class="single-comment">
+								<div class="single-comment-thumb">
+									<img src="img/author-image/author-image-1.png" alt="hastech logo">
+								</div>
+								<div class="single-comment-content">
+									<div class="single-comment-content-top">
+										<h6><a href="blog-right-sidebar.html">ADMIN</a> – February 17, 2015</h6>
+										<a href="#" class="reply-button">Reply</a>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.</p>
+								</div>
+							</div>
+
+							<div class="single-comment single-comment-reply">
+								<div class="single-comment-thumb">
+									<img src="img/author-image/author-image-2.png" alt="hastech logo">
+								</div>
+								<div class="single-comment-content">
+									<div class="single-comment-content-top">
+										<h6><a href="blog-right-sidebar.html">DEMO</a> – February 17, 2015</h6>
+										<a href="#" class="reply-button">Reply</a>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.</p>
+								</div>
+							</div>
+
+							<div class="single-comment">
+								<div class="single-comment-thumb">
+									<img src="img/author-image/author-image-1.png" alt="hastech logo">
+								</div>
+								<div class="single-comment-content">
+									<div class="single-comment-content-top">
+										<h6><a href="blog-right-sidebar.html">ADMIN</a> – February 17, 2015</h6>
+										<a href="#" class="reply-button">Reply</a>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum.</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="commentbox mt-5">
+							<h6>LEAVE A REPLY</h6>
+							<form action="#" class="sn-form">
+								<div class="sn-form-inner">
+									<div class="single-input">
+										<label for="new-review-textbox">Comment</label>
+										<textarea id="new-review-textbox" cols="30" rows="5"></textarea>
+									</div>
+									<div class="single-input single-input-half">
+										<label for="new-review-name">Name*</label>
+										<input type="text" id="new-review-name">
+									</div>
+									<div class="single-input single-input-half">
+										<label for="new-review-email">Email*</label>
+										<input type="email" id="new-review-email">
+									</div>
+									<div class="single-input">
+										<button class="sn-button sn-button-dark" type="submit"><span>Post Comment</span></button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
+
 				</div>
-			</div>
-			<!--// Newsletter & Brand Logos Area -->
+            </div>
+            <!--// Blog Area -->
 
 		</main>
 		<!--// Page Conttent -->
@@ -648,19 +523,20 @@
 			<!--// Footer Copyright Area -->
 			
 		</footer>
-		<!--// Footer Area -->
+        <!--// Footer Area -->
 
 
 	</div>
-	<!--// Wrapper -->
+    <!--// Wrapper -->
+    
 
 	<!-- Js Files -->
-	<script src="{% static 'goods/js/vendor/modernizr-3.6.0.min.js' %}"></script>
-	<script src="{% static 'goods/js/vendor/jquery-3.3.1.min.js' %}"></script>
-	<script src="{% static 'goods/js/popper.min.js' %}"></script>
-	<script src="{% static 'goods/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'goods/js/plugins.js' %}"></script>
-	<script src="/static/goods/js/main.js"></script>
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 

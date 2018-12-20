@@ -1,5 +1,4 @@
-{% load staticfiles %}
-
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 
@@ -12,8 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="{% static  'goods/img/favicon.ico' %}" type="image/x-icon">
-	<link rel="apple-touch-icon" href="{% static 'goods/img/icon.png' %}">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/icon.png">
 
 	<!-- Google font (font-family: 'Carrois Gothic', sans-serif;) -->
 	<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
@@ -21,14 +20,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	
 	<!-- Plugins -->
-	<link rel="stylesheet" href="{% static 'goods/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" href="{% static 'goods/css/plugins.css' %}">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/plugins.css">
 
 	<!-- Style Css -->
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Custom Styles -->
-	<link rel="stylesheet" href="{% static 'goods/css/custom.css' %}">
+	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -105,7 +104,7 @@
 						<div class="col-lg-4 col-md-6 col-sm-7 col-12">
 							<div class="header-logo">
 								<a href="base.html">
-									<img src="{% static 'goods/img/logo/logo-1.png' %}" alt="logo">
+									<img src="img/logo/logo-1.png" alt="logo">
 								</a>
 							</div>
 						</div>
@@ -117,7 +116,7 @@
 									<ul class="minicart-product-list">
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-1.jpg' %}" alt="cart products">
+												<img src="img/product/small-size/product-image-1.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -130,7 +129,7 @@
 										</li>
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-2.jpg' %}" alt="cart products">
+												<img src="img/product/small-size/product-image-2.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -143,7 +142,7 @@
 										</li>
 										<li>
 											<a href="product-details-right-sidebar.html" class="minicart-product-image">
-												<img src="{% static 'goods/img/product/small-size/product-image-3.jpg'%}" alt="cart products">
+												<img src="img/product/small-size/product-image-3.jpg" alt="cart products">
 												<span class="quantity">1</span>
 											</a>
 											<div class="minicart-product-details">
@@ -281,164 +280,70 @@
 			<!--// Header Mobile Menu -->
 
 		</header>
-		<!--// Header -->
-
-		<!-- Hero Area -->
-		<div class="hero-area slider-navigation-1">
-			<div class="single-hero-item d-flex align-items-center"style="background-image: url(/static/goods/img/hero-image/hero-image-1.jpg);">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-8 col-md-9 offset-xl-1 offset-0">
-							<div class="hero-content">
-								<h1>LATEST & EXCLUSIVE COLLECTIONS FOR WOMEN</h1>
-								<p>Genrre is one of the best shop for mens product & womens product. We always try to bring latest & exclusive collections.</p>
-								<a href="shop-right-sidebar.html" class="sn-button">
-									<span>Shop Now</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="single-hero-item d-flex align-items-center"style="background-image: url({% static 'goods/img/hero-image/hero-image-2.jpg'%});">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-6 col-lg-8 col-md-9 offset-xl-1 offset-0">
-							<div class="hero-content">
-								<h1>OUR NEW COLLECTIONS FOR STYLISH MEN & WOMEN</h1>
-								<p>Genrre is one of the best shop for mens product & womens product. We always try to bring latest & exclusive collections.</p>
-								<a href="shop-right-sidebar.html" class="sn-button">
-									<span>Shop Now</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--// Hero Area -->
+        <!--// Header -->
+        
+        <!-- Bradcrumb Area -->
+        <div class="sn-breadcrumb-are bg-theme section-padding-xs">
+            <div class="container">
+                <div class="sn-breadcrumb text-center">
+                    <h3>CONTACT US</h3>
+                </div>
+            </div>
+        </div>
+        <!--// Bradcrumb Area -->
 
 		<!-- Page Conttent -->
 		<main class="page-content">
 
-			<!-- Banners Area -->
-			<div class="banner-area section-padding-md">
+            <!-- Contact Area -->
+            <div class="contact-us-area section-padding-md">
+
+				<!-- Contact Us Info -->
 				<div class="container">
-					<div class="row banners-masonry-active banners-wrapper">
-
-						<!-- Single Banner -->
-						<div class="col-lg-8 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-1.jpg'%}" alt="best banner image">
-								<div class="banner-content text-center">					
-									<h3>SAHARA MEN’S JEWELRY</h3>
-									<p>Get more jewelry accessories from Sahara spring jewelry Collection 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-2.jpg'%}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>VINTAGE CLOTHING</h3>
-									<p>Sale away with 58 new styles up 80 % off</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-3.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>BEAUTIFUL & FRESH</h3>
-									<p>Make your life more colorful !</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-4.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>FASHION MENSWEAR</h3>
-									<p>Spring Collections 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-5.jpg'%}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>COLORFUL SWEATER</h3>
-									<p>Get the new look with only <br>$250.00</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-6.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>CASUAL SHOES</h3>
-									<p>Sahara casual shoes collection 2018</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-7.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>GRUNGE STREET STYLE</h3>
-									<p>Become a grunge guy now !</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
-
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-9.jpg' %}" alt="best banner image">
-								<div class="banner-content text-center">					
-									<h3>NEW EXCLUSIVES</h3>
-									<p>Our best beautiful multitakers – 30% OFF</p>
-								</div>
-							</a>	
-						</div>
-						<!--// Single Banner -->
+					<div class="row">
 						
-						<!-- Single Banner -->
-						<div class="col-lg-4 col-md-6 col-12 masonry-item">
-							<a href="product-details.html" class="banner mt-30">
-								<img src="{% static 'goods/img/banners/banner-image-8.jpg' %}" alt="best banner image">
-								<div class="banner-content banner-content-2 text-center">					
-									<h3>SAHARA LOOKBOOK</h3>
-									<p>Spring / Summer 2018</p>
-								</div>
-							</a>	
+						<div class="col-lg-6">
+							<div class="commentbox">
+								<h5>LEAVE US A MESSAGE</h5>
+								<form id="contact-form" action="mail.php" method="POST" class="sn-form contact-form">
+									<div class="sn-form-inner">
+										<div class="single-input single-input-half">
+											<label for="new-review-name">Name*</label>
+											<input type="text" name="name" id="new-review-name">
+										</div>
+										<div class="single-input single-input-half">
+											<label for="new-review-email">Email*</label>
+											<input type="email" name="email" id="new-review-email">
+										</div>
+										<div class="single-input">
+											<label for="new-review-subject">Subject*</label>
+											<input type="text" name="subject" id="new-review-subject">
+										</div>
+										<div class="single-input">
+											<label for="new-review-textbox">Your Message</label>
+											<textarea id="new-review-textbox" name="message" cols="30" rows="5"></textarea>
+										</div>
+										<div class="single-input">
+											<button class="sn-button sn-button-dark" type="submit"><span>Send</span></button>
+										</div>
+									</div>
+								</form>
+								<p class="form-message"></p>
+							</div>
 						</div>
-						<!--// Single Banner -->
+
+						<div class="col-lg-6">
+							<div class="google-map-wrapper">
+								<div class="google-map" id="google-map"></div>
+							</div>
+						</div>
 
 					</div>
 				</div>
-			</div>
-			<!--// Banners Area -->
+				<!--// Contact Us Info -->
+
+            </div>
+            <!--// Contact Area -->
 
 			<!-- Features Area -->
 			<div class="features-area">
@@ -499,32 +404,32 @@
 							<div class="brand-logos slider-navigation-2">
 								<div class="brand-logo">
 									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-1.jpg'%}" alt="best brand logo">
+										<img src="img/brand-logos/brand-logo-1.jpg" alt="best brand logo">
 									</a>
 								</div>
 								<div class="brand-logo">
 									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-2.jpg'%}" alt="best brand logo">
+										<img src="img/brand-logos/brand-logo-2.jpg" alt="best brand logo">
 									</a>
 								</div>
 								<div class="brand-logo">
 									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-3.jpg'%}" alt="best brand logo">
+										<img src="img/brand-logos/brand-logo-3.jpg" alt="best brand logo">
 									</a>
 								</div>
 								<div class="brand-logo">
 									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-4.jpg'%}" alt="best brand logo">
+										<img src="img/brand-logos/brand-logo-4.jpg" alt="best brand logo">
 									</a>
 								</div>
 								<div class="brand-logo">
 									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-2.jpg'%}" alt="best brand logo">
+										<img src="img/brand-logos/brand-logo-2.jpg" alt="best brand logo">
 									</a>
 								</div>
 								<div class="brand-logo">
 									<a href="#">
-										<img src="{% static 'goods/img/brand-logos/brand-logo-3.jpg'%}" alt="best brand logo">
+										<img src="img/brand-logos/brand-logo-3.jpg" alt="best brand logo">
 									</a>
 								</div>
 							</div>
@@ -648,19 +553,24 @@
 			<!--// Footer Copyright Area -->
 			
 		</footer>
-		<!--// Footer Area -->
+        <!--// Footer Area -->
 
 
 	</div>
 	<!--// Wrapper -->
 
+	<!-- Google Map Js -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxvP66_Xk1ts77oL2Z7EpDxhDD_jMg-D0"></script>
+	<script src="js/google-map.js"></script>
+
 	<!-- Js Files -->
-	<script src="{% static 'goods/js/vendor/modernizr-3.6.0.min.js' %}"></script>
-	<script src="{% static 'goods/js/vendor/jquery-3.3.1.min.js' %}"></script>
-	<script src="{% static 'goods/js/popper.min.js' %}"></script>
-	<script src="{% static 'goods/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'goods/js/plugins.js' %}"></script>
-	<script src="/static/goods/js/main.js"></script>
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/ajax-mail.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 
