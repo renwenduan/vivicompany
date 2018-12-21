@@ -1382,7 +1382,7 @@ blockquote {
 }
 
 .text-underline {
-  font-style: underline;
+  text-decoration: underline;
 }
 
 /* Font specialized */
@@ -3598,7 +3598,10 @@ nav.sn-navigation ul li.megamenu-active:hover > ul {
 }
 
 @media only screen and (max-width: 575px) {
-  width: 275px;
+  .container{
+      width: 275px;
+  }
+
 }
 
 /**
@@ -3789,7 +3792,7 @@ nav.sn-navigation ul li.megamenu-active:hover > ul {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 33%;
   flex: 0 0 33%;
-  max-width: 0 0 33%;
+  max-width:33%;
   padding-right: 30px;
 }
 
@@ -3797,7 +3800,7 @@ nav.sn-navigation ul li.megamenu-active:hover > ul {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 67%;
   flex: 0 0 67%;
-  max-width: 0 0 67%;
+  max-width:67%;
   margin-top: 0;
 }
 

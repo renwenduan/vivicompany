@@ -1,9 +1,9 @@
 {% load  static from staticfiles %}
 
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 
-<!-- source http://www.scnoob.com More templates http://www.scnoob.com/moban -->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -91,7 +91,7 @@
 
                                     {#this read the catalog from the database automatically so need maintain the database catalog#}
                                     {% for foo in catalog %}
-                                        <option value="1">{{ foo }}</option>#}
+                                        <option value="1">{{ foo }}</option>
                                     {% endfor %}
 
 
@@ -127,7 +127,7 @@
 								</li>
 								<li><a href="{% url 'goods:shop' %}">SHOP</a>
 									<ul>
-										<li><a href="shop-left-sidebar.html">SHOP WITH LEFT SIDEBAR</a></li>
+										<li><a href="{% url 'goods:shop' %}">SHOP WITH LEFT SIDEBAR</a></li>
 									</ul>
 								</li>
 								<li><a href="{% url 'goods:about-us' %}">ABOUT US</a></li>
@@ -167,16 +167,109 @@
 		</header>
 		<!--// Header -->
 
-		<!-- Hero Area -->
-
-
         {% block main_block %}
-
-            <!--// Page Conttent -->
 
         {% endblock %}
 
+        <main class="page-content">
+			<!-- Features Area -->
+			<div class="features-area">
+				<div class="container">
+					<div class="row justify-content-center features-wrapper">
 
+						<!-- Single Features -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="features text-center">
+								<h6>MONEY BACK GUARANTEED</h6>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+							</div>
+						</div>
+						<!--// Single Features -->
+
+						<!-- Single Features -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="features text-center">
+								<h6>FREE WORLDWIDE DELIVERY</h6>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+							</div>
+						</div>
+						<!--// Single Features -->
+
+						<!-- Single Features -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="features text-center">
+								<h6>ONLINE SUPPORT 24/7</h6>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+							</div>
+						</div>
+						<!--// Single Features -->
+
+					</div>
+				</div>
+			</div>
+			<!--// Features Area -->
+
+			<!-- Newsletter & Brand Logos Area -->
+			<div class="newsletter-brandlogo-area section-padding-xs">
+				<div class="container">
+					<div class="row no-gutters align-items-center">
+
+						<!-- Newsletter -->
+						<div class="col-lg-4">
+							<div class="newsletterbox">
+								<h5>SIGN UP FOR OUR WEEKLY NEWSLETTER !</h5>
+								<form action="#">
+									<input type="text" placeholder="Email">
+									<button type="submit">Subscribe</button>
+								</form>
+							</div>
+						</div>
+						<!--// Newsletter -->
+
+						<!-- Brand Logo -->
+						<div class="col-lg-8">
+							<div class="brand-logos slider-navigation-2">
+								<div class="brand-logo">
+									<a href="#">
+										<img src="/static/goods/img/brand-logos/brand-logo-1.jpg" alt="best brand logo">
+									</a>
+								</div>
+								<div class="brand-logo">
+									<a href="#">
+										<img src="/static/goods/img/brand-logos/brand-logo-2.jpg" alt="best brand logo">
+									</a>
+								</div>
+								<div class="brand-logo">
+									<a href="#">
+										<img src="/static/goods/img/brand-logos/brand-logo-3.jpg" alt="best brand logo">
+									</a>
+								</div>
+								<div class="brand-logo">
+									<a href="#">
+										<img src="/static/goods/img/brand-logos/brand-logo-4.jpg" alt="best brand logo">
+									</a>
+								</div>
+								<div class="brand-logo">
+									<a href="#">
+										<img src="/static/goods/img/brand-logos/brand-logo-2.jpg" alt="best brand logo">
+									</a>
+								</div>
+								<div class="brand-logo">
+									<a href="#">
+										<img src="/static/goods/img/brand-logos/brand-logo-3.jpg" alt="best brand logo">
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--// Brand Logo -->
+
+					</div>
+				</div>
+			</div>
+			<!--// Newsletter & Brand Logos Area -->
+
+		</main>
+		<!--// Page Conttent -->
 
 		<!-- Footer Area -->
 		<footer class="footer-area bg-black section-padding-sm">
@@ -294,11 +387,14 @@
 	<!--// Wrapper -->
 
 	<!-- Js Files -->
-	<script src="{% static 'goods/js/vendor/modernizr-3.6.0.min.js' %}"></script>
-	<script src="{% static 'goods/js/vendor/jquery-3.3.1.min.js' %}"></script>
-	<script src="{% static 'goods/js/popper.min.js' %}"></script>
-	<script src="{% static 'goods/js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'goods/js/plugins.js' %}"></script>
+	<script src="{% static 'goods/js/vendor/modernizr-3.6.0.min.js' %}" ></script>
+	<script src="{% static 'goods/js/vendor/jquery-3.3.1.min.js' %}" ></script>
+	<script src="{% static 'goods/js/popper.min.js' %}" ></script>
+	<script src="{% static 'goods/js/bootstrap.min.js' %}" ></script>
+	<script src="{% static 'goods/js/plugins.js' %}" ></script>
+	<script src="{% static 'goods/js/main.js' %}" ></script>
 </body>
 
+
+<!-- source http://www.scnoob.com More templates http://www.scnoob.com/moban -->
 </html>
