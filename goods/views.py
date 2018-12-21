@@ -11,7 +11,7 @@ def index(request):
     context = {
     'catalog':set(catalog_list)
     }
-    return render(request, 'base.html', context)
+    return render(request, 'index.html', context)
 
 
 def contact_us(request,):
@@ -19,14 +19,14 @@ def contact_us(request,):
         'name':'Vivi',
         'tel':'18888888888'
     }
-    return render(request,'contact_us.html',context)
+    return render(request,'contact.html',context)
 
 
 def about_us(request,):
     context = {
 
     }
-    return render(request,'about_us.html',context)
+    return render(request,'about-us.html',context)
 
 def goods_show(request,catalog):
     print(catalog)
@@ -35,3 +35,9 @@ def goods_show(request,catalog):
         'result': result
     }
     return render(request,'goods_show.html',context)
+
+def shop(request,):
+    context = {
+
+    }
+    return render(request,'shop-left-sidebar.html',context)
