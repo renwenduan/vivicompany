@@ -1,7 +1,9 @@
+import os
+
 from django.shortcuts import render
 from .models import Goods
 # Create your views here.
-
+from vivicompany.settings import *
 
 def index(request):
     catalog_list = []
@@ -29,7 +31,6 @@ def about_us(request,):
     return render(request,'about-us.html',context)
 
 def goods_show(request,catalog):
-    print(catalog)
     result = Goods.objects.filter(gmain_catalog=catalog).values()
     context={
         'result': result
@@ -37,7 +38,22 @@ def goods_show(request,catalog):
     return render(request,'goods_show.html',context)
 
 def shop(request,):
+    goods_list = Goods.objects.all()
     context = {
-
+        'goods_list':goods_list
     }
     return render(request,'shop-left-sidebar.html',context)
+
+
+def details(request,id_get):
+    file_list = []
+    goods = Goods.objects.filter(id=id_get)[0]
+    file_path = os.listdir(os.path.join(BASE_DIR,'static','goods','img','product','thumbnail-size'))
+    for name in file_path:
+        if name.startswith(goods.gname):
+            file_list.append(name)
+    context = {
+        'goods':goods,
+        'file_list':file_list,
+    }
+    return render(request,'product-details.html',context)
