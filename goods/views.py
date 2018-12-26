@@ -36,8 +36,13 @@ def about_us(request,):
 
 #
 
-def shop(request,):
-    goods_list = Goods.objects.all()
+def shop(request,catalog=''):
+    if not catalog :
+        goods_list = Goods.objects.all()
+
+    else:
+        goods_list = Goods.objects.filter(gcatalog=catalog)
+
     context = {
         'goods_list':goods_list,
         'catalog': catalog_list
